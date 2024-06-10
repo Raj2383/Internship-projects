@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-02</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <script>
+        const width=parseInt(prompt("Enter the width of newdiv:"));
+        const height=parseInt(prompt("Enter the height of newdiv:"));
+        const text=prompt("Enter the text in newdiv:");
+        function createDiv(width, height, text) {
+            const div1 = document.getElementById("container");
+            const adddiv = document.createElement("div");
+            adddiv.style.width=width+'px';
+            adddiv.style.height=height+'px';
+            adddiv.innerHTML = text;
+            div1.appendChild(adddiv);
+        }
+        createDiv(width, height, text);
+    </script>
+</body>
+
+</html>

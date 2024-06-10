@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-04</title>
+</head>
+<body>
+    <center><h1>Question-04</h1></center>
+    <center><div><h4>
+        4. Write a function to perform this. You are given two numbers n1 and n2. You need to find the sum of the products of their corresponding digits. So, for a number n1= 6 and n2 = 34, you'll do (6*4)+(0*3) = 24.</h4></div></center>
+
+    <script>
+        const a = parseInt(prompt("Enter a number:"));
+const b = parseInt(prompt("Enter a number:"));
+
+function calculate(a, b) {
+    let result = 0;
+    
+    while (a > 0 || b > 0) {
+        let r1 = a % 10;
+        let r2 = b % 10;
+
+        
+        result += r1 * r2;
+        a = Math.floor(a / 10);
+        b = Math.floor(b / 10);
+    }
+    
+    alert(result);
+    console.log(result);
+}
+
+calculate(a, b);
+
+    </script>    
+</body>
+</html>

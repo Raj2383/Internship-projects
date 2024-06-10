@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-02</title>
+</head>
+<body>
+    <center><h1>Question-01</h1></center>
+    <center><div><h4>2. Write a function to calculate which can add, subtract, multiply and divide two numbers. Use switch inside function.</h4></div></center>
+    <script>
+        const operator = prompt("Enter a oprator from '+', '-', '*', '/':");
+        const a= parseFloat(prompt("Enter a number:"));
+        const b=parseFloat(prompt("Enter a number:"));
+        function calculate(a, b, operator) {
+            let result;
+            switch (operator) {
+                case '+':
+                    result= a + b;
+                    console.log(result);
+                    break;
+                case '-':
+                    result=a-b;
+                    console.log(result);
+                    break;
+                case '*':
+                    result=a*b;
+                    console.log(result);
+                    break;
+                case '/':
+                    result=a/b;
+                    console.log(result);
+                    break;
+            
+                default:
+                    result="invalid result";
+                    console.log(result);
+                    alert("Error 238!")
+                    break;
+            }
+        }
+        calculate(a, b, operator);
+    </script>
+</body>
+</html>
